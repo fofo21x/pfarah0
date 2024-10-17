@@ -1,0 +1,207 @@
+*{
+    box-sizing : border-box; 
+    font-family: Arial, Helvetica, sans-serif;}
+    body{margin : 0; }
+ 
+ header{
+    background-color:  #c7c0eb;
+ }
+
+header h4{
+       text-align: center ;
+      margin-top: -135px;
+      margin-left:-190px;
+}
+          
+header h4 a{ 
+           border: 1px solid white;
+           color: white ;
+           text-decoration : none ;
+           padding: 10px 90px;
+           margin-left : 25% ;
+           text-align: center ;
+           font-weight :normal ;
+} 
+header h4 a:hover { 
+                 color : black;
+                 background: white;  
+
+} 
+ nav{ 
+    
+    color : rgb(202, 158, 210);
+    padding : 25px 50px 60px 50px;
+    background-color: rgb(84, 72, 96);
+    
+}
+
+header ul { list-style-type : none ;  
+    float : right ;
+    margin-top :10px; 
+}  
+header ul li {display : inline-block;
+    margin-right :26px;
+}
+header ul li a { 
+ color : rgb(205, 130, 215);
+ text-decoration :none; 
+ font-size : 0.9em;
+ font-weight: normal;
+ padding:16px;
+}
+header nav ul li a:hover {
+
+color :rgb(239, 239, 239) ; 
+background-color:rgba(160,160,160,0.2);
+padding:40px 30px 33px;
+margin:15px;
+}   
+.container{
+    width: 100%;
+    padding: 50px;
+    flex-direction: column;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 40px;
+}
+.gallery img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+    filter: grayscale(100%);
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+   
+.n2 h1{
+       color:rgb(230, 227, 232);
+       font-weight: normal;
+       font-size:250%;
+       font-family: "Times New Roman", Times, serif;
+       padding:50px;
+       margin-top:-650px;
+       text-align: center ;
+       background-color: #906ab5;
+}
+.n2 h2{
+    color:rgb(230, 227, 232);
+    font-weight: normal;
+    font-size:250%;
+    font-family: "Times New Roman", Times, serif;
+    padding:50px;
+    margin-top:-50px;
+    margin-left: 103px;
+   
+}
+.n2 p{
+     color:#50326e;
+     padding:150px;
+     margin-top:-200px;
+     font-size:200%;
+     font-family: "Times New Roman", Times, serif;
+   
+     
+}
+.contact-container{
+   height:90vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px ;
+}
+.contact-left-title h2{
+font-weight: 600;
+color: #50326e;
+font-size: 40px;
+margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color:#50326e ;
+    border-radius: 10px;
+    margin-bottom:20px ;
+
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left:25px ;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top:15px ;
+    border-radius: 20px;
+
+}
+.contact-inputs:focus{
+    border: 2px solid #794fa4;
+}
+.contact-inputs::placeholder{
+   color: #a9a9a9;    
+    }
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background:linear-gradient(270deg,#914795,#50326e);
+    cursor: pointer;
+}
+    .contact-right img{
+       width: 500px;
+    }
+    @media  (max-width: 800px){
+        .contact-inputs{
+        width: 80vw;
+        }
+        .contact-right{ 
+        display: none;
+        }
+    }
+ footer{
+    background-color: rgb(84, 72, 96);
+    padding-top: 25px;
+    margin-top: 50px;
+
+    }        
+footer h5{
+   color :  rgb(160, 153, 208);
+   text-align: right;
+   font-weight :normal ;
+   padding-right:20px;
+  
+   
+}
+
+footer p{
+           text-align: left;
+           color :  rgb(160, 153, 208);
+           font-size:70%;
+           padding-left:10px;
+           margin-bottom:-200px;
+           margin-top:-55px;
+           padding-bottom: 20px;
+           
+}
